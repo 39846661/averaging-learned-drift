@@ -1,0 +1,63 @@
+{
+  "N": 256,
+  "M": 40,
+  "band_halfwidth": 2.1333333333333333,
+  "rows": [
+    {
+      "f": 1,
+      "note": "slow, inside the profile",
+      "delta": 1.0,
+      "predicted": 0.9603456507456566,
+      "measured": 0.9603455350445887,
+      "regime": "in band"
+    },
+    {
+      "f": 30,
+      "note": "below the window resolution",
+      "delta": 30.0,
+      "predicted": 0.05775778545793533,
+      "measured": 0.05775775762363664,
+      "regime": "averaged"
+    },
+    {
+      "f": 128,
+      "note": "half the sampling frequency",
+      "delta": 128.0,
+      "predicted": 6.123233995736766e-17,
+      "measured": 5.881406472951767e-15,
+      "regime": "averaged"
+    },
+    {
+      "f": 250,
+      "note": "just outside the resonant band",
+      "delta": 6.0,
+      "predicted": 0.06629901425018228,
+      "measured": 0.06580041480744929,
+      "regime": "averaged"
+    },
+    {
+      "f": 256,
+      "note": "grid resonance, f = N",
+      "delta": 0.0,
+      "predicted": 1.0,
+      "measured": 0.9999210442038189,
+      "regime": "in band"
+    },
+    {
+      "f": 257,
+      "note": "inside the resonant band",
+      "delta": 1.0,
+      "predicted": 0.9603456507456511,
+      "measured": 0.9603455350445899,
+      "regime": "in band"
+    },
+    {
+      "f": 65536,
+      "note": "aliasing counterexample, f = N^2",
+      "delta": 0.0,
+      "predicted": 1.0,
+      "measured": 0.9999210442039782,
+      "regime": "in band"
+    }
+  ]
+}

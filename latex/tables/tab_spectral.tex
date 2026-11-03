@@ -1,0 +1,30 @@
+\begin{table}[t]
+\centering
+\caption{E7: the spectral criterion of Proposition~\ref{prop:spectral} checked
+directly. Window average of a unit-amplitude tone at frequency $f$, with $N=256$ and
+$M=\lfloor N^{2/3}\rfloor=40$, so that the resonant band has half-width
+$N/(3M)=2.13$.}
+\label{tab:spectral}
+\small
+\setlength{\tabcolsep}{9pt}
+\renewcommand{\arraystretch}{1.15}
+\begin{tabular}{@{}r r l r r@{}}
+\toprule
+$f$ & $\delta_{N}(f)$ & Regime & Predicted & Measured \\
+\midrule
+1     & 1   & in band  & 0.9603 & 0.9603 \\
+30    & 30  & averaged & 0.0578 & 0.0578 \\
+128   & 128 & averaged & 0.0000 & 0.0000 \\
+250   & 6   & averaged & 0.0663 & 0.0658 \\
+256   & 0   & in band  & 1.0000 & 0.9999 \\
+257   & 1   & in band  & 0.9603 & 0.9603 \\
+65536 & 0   & in band  & 1.0000 & 0.9999 \\
+\bottomrule
+\end{tabular}
+
+\smallskip
+{\footnotesize ``In band'' means $\delta_{N}(f)\le N/(3M)$, the resonant band of
+Proposition~\ref{prop:spectral}(i); ``averaged'' means $N/(3M)<\delta_{N}(f)\le N/2$.
+Predicted is $|\mathcal{D}_{M}(2\pi f/N)|$ from \eqref{eq:tone-residual}; measured is
+the supremum over $4001$ start times.}
+\end{table}

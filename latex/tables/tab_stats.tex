@@ -1,0 +1,32 @@
+\begin{table*}[t]
+\centering
+\caption{Fitted exponents with bootstrap confidence intervals ($B=2000$ resamples over
+trajectories) and two-sided tests against the predicted exponent.}
+\label{tab:stats}
+\small
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.1}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+Quantity & Fitted exponent & 95\% CI & $p$ vs.\ prediction \\
+\midrule
+E1 forward, trajectory rate & $-0.535$ & $[-0.54,\,-0.53]$ & $0.000^{*}$ \\
+E3a discretisation (C)      & $-1.022$ & $[-1.03,\,-1.01]$ & $0.000^{*}$ \\
+E3b score term (B)          & $+4.880$ & $[+4.80,\,+4.97]$ & $0.000^{*}$ \\
+E4 EM smooth                & $-0.985$ & $[-1.03,\,-0.94]$ & $0.523$ \\
+E4 AVG smooth               & $-0.774$ & $[-0.81,\,-0.74]$ & $0.000^{*}$ \\
+E4 AVG rough                & $-0.613$ & $[-0.64,\,-0.59]$ & $0.000^{*}$ \\
+E4 AVG rough, smoothed schedule & $-0.802$ & $[-0.83,\,-0.77]$ & $0.000^{*}$ \\
+E4 AVG aliased              & $-0.759$ & $[-0.79,\,-0.73]$ & $0.000^{*}$ \\
+\midrule
+\multicolumn{4}{@{}l}{\emph{E6: diagnostic slope of $\mathrm{osc}(N)$, measured vs.\ predicted}}\\
+E6 $K=1$: $\gamma_{s}$ & $0.839$ & -- & $-0.188$ vs.\ $-0.280$ \\
+E6 $K=8$: $\gamma_{s}$ & $0.472$ & -- & $-0.155$ vs.\ $-0.157$ \\
+\bottomrule
+\end{tabular}
+
+\smallskip
+{\footnotesize $^{*}$\,$p<0.001$. No $p$-value is computed for the two E6 rows: they
+report the measured H\"older exponent of the learned drift and the observed slope of
+$\mathrm{osc}(N)$, compared with the slope predicted from that exponent.}
+\end{table*}
