@@ -1,0 +1,25 @@
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.spl
+*.synctex.gz
+*.abs
+*.fls
+*.fdb_latexmk
+*.toc
+
+# Compiled PDFs (figures are kept; manuscript PDFs are not)
+latex/*.pdf
+*.dvi
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# OS
+.DS_Store
+Thumbs.db
